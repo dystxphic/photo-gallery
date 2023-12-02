@@ -1,0 +1,344 @@
+/* Base Styles */
+/* Set base background color for the whole page */
+html {
+    background-color: #000000;
+}
+
+/* Basic body styling including font family and width constraints */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 485px;
+    margin: 0 auto; /* Center align the body */
+}
+
+/* Main content area background color */
+main {
+    background-color: #ffffff;
+}
+
+/* Paragraph styling for better readability */
+p {
+    font-size: 1.25em; /* Increased font size for readability */
+    padding-left: 15px;
+    padding-right: 8px;
+}
+
+/* Styling for figcaption, labels, inputs, and small text */
+figcaption, label, input, small {
+    font-size: 1em;
+    text-transform: uppercase; /* Uppercase for visual consistency */
+    font-weight: bold;
+}
+
+/* Navigation Link Styles */
+/* Enhance navigation links for better UX */
+nav a {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none; /* Remove underline from links */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Heading Styles */
+/* Primary heading style */
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+    text-align: left;
+    background-color: white;
+    position: relative;
+    bottom: 35px; /* Position adjustment for visual effect */
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-left: 2px;
+    text-transform: uppercase;
+}
+
+/* Secondary heading style */
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Footer Styles */
+/* Footer text styling */
+footer {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Form Heading and Paragraph Styles */
+/* Color and alignment for form headings and paragraphs */
+form h2, form p {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Navigation Structure */
+/* Flexbox setup for navigation items */
+nav ul {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 60px;
+    list-style: none; /* Remove default list styling */
+}
+
+/* Style for "Back to Top" link */
+[href="#Top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border: 2px solid white;
+    background-color: #000000;
+}
+
+/* Hide navigation headers */
+nav h2 {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Padding for navigation links */
+nav a {
+    padding: 4px;
+}
+
+/* Layout Styles */
+/* Basic container layout */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Positioning for main content */
+main {
+    position: relative;
+    bottom: 30px;
+}
+
+/* Column layout for images */
+.imagecolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image styling */
+img {
+    width: 440px; /* Set a fixed width for images */
+    position: relative;
+    right: 18px;
+}
+
+/* Figcaption styling for image descriptions */
+figcaption {
+    position: relative;
+    bottom: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Dynamic Color and Position Styles */
+/* Styling elements based on data attributes */
+[data-color="white"][data-position="bottom"] {
+    color: #ffffff;
+    bottom: 35px;
+}
+
+[data-color="white"][data-position="top"] {
+    color: #ffffff;
+    bottom: 280px;
+}
+
+[data-color="black"][data-position="top"] {
+    color: #000000;
+    bottom: 280px;
+}
+
+[data-color="black"][data-position="top"][data-type="tall"] {
+    color: #000000;
+    bottom: 640px;
+}
+
+[data-color="black"][data-position="bottom"][data-type="tall"] {
+    color: #000000;
+    bottom: 30px;
+}
+
+/* Hide form header */
+form h1 {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Form Styles */
+/* Label styling within forms */
+.form label {
+    color: #ffffff;
+    padding: 16px;
+}
+
+/* Input field styling in forms */
+.form input {
+    color: #007d7b;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+/* Placeholder Text Color */
+input::placeholder {
+    color: #007d7b; /* Your specified color */
+    opacity: 1; /* Ensure the color is not partially transparent */
+}
+
+/* Submit button styling */
+button[type=submit] {
+    background: #007d7b;
+    color: white;
+    border: 0;
+    padding: 10px 100px;
+    border-radius: 14px;
+    position: relative;
+    left: 95px;
+    top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Form positioning */
+form {
+    position: relative;
+    bottom: 70px;
+    left: 20px;
+}
+
+/* Positioning for form headings and paragraphs */
+form h2, form p {
+    position: relative;
+    top: 70px;
+    right: 25px;
+}
+
+/* Footer margin */
+footer {
+    margin: 40px;
+}
+
+/* Media Query Styles */
+/* Responsive styles for larger screens */
+@media screen and (min-width:880px) {
+    /* Adjust body width for better layout on larger screens */
+    body {
+        width: 80%;
+    }
+
+    /* Grid layout for image columns on wider screens */
+    .imagecolumn {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    /* Adjust figure width for grid layout */
+    figure {
+        width: 100%;
+        position: relative;
+        right: 10px;
+    }
+
+    /* Adjust image width for grid layout */
+    img {
+        width: 90%;
+    }
+
+    /* Position adjustments for form elements */
+    label[for=name] {
+        position: relative;
+        bottom: 9px;
+    }
+
+    input[id=name] {
+        position: relative;
+    }
+
+    label[for=email] {
+        position: relative;
+        bottom: -9px;
+    }
+
+    input[id=email] {
+        position: relative;
+        top: 14px;
+    }
+
+    label[for=text] {
+        position: relative;
+        bottom: -24px;
+    }
+
+    input[id=text] {
+        position: relative;
+        top: 26px;
+    }
+
+    /* Adjust submit button positioning and padding */
+    button[type=submit] {
+        top: 60px;
+        left: 19%;
+        padding: 10px 200px;
+    }
+
+    /* Adjust positioning for elements with specific data attributes */
+    [data-color="white"][data-position="bottom"] {
+        bottom: 28px;
+        right: 40px;
+    }
+
+    [data-color="white"][data-position="top"] {
+        bottom: 25px;
+        right: 40px;
+    }
+
+    [data-color="black"][data-position="top"] {
+        bottom: 90%;
+        right: 40px;
+    }
+
+    [data-color="black"][data-position="top"][data-type="tall"] {
+        bottom: 95%;
+        right: 40px;
+    }
+
+    [data-color="black"][data-position="bottom"][data-type="tall"] {
+        color: #000000;
+        bottom: 30px;
+        right: 40px;
+    }
+}
+
+/* Further Responsive styles for even larger screens */
+@media screen and (min-width:1300px) {
+    /* Three-column grid layout for image columns on the largest screens */
+    .imagecolumn {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    /* Adjust submit button positioning for larger layout */
+    button[type=submit] {
+        left: 29%;
+    }
+
+    /* Right alignment for navigation items on larger screens */
+    nav ul {
+        display: flex;
+        justify-content: right;
+    }
+}

@@ -1,0 +1,132 @@
+<!-- Robert A. Bunton, GIT 337, Photo Gallery -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Head Section: Contains metadata, page title, and links to external CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main Container: Wraps the entire content of the page -->
+    <div class="container">
+
+        <!-- Header Section: Contains site title and navigation -->
+        <header>
+            <h1>TK Photography</h1>
+            <nav> <!-- Navigation Section -->
+                <h2>Main Navigation</h2> <!-- Hidden heading for screen readers -->
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#Top">Top</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Section: Primary content area -->
+        <main>
+            <!-- About Section -->
+            <section>
+                <h2>About</h2>
+                <p>Hello!</p>
+                <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape
+                    photography is my speciality and it's taken me all over the world.</p>
+            </section>
+
+            <!-- Gallery Section: Displays a collection of images -->
+            <section>
+                <h2>Gallery</h2>
+                <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+                <div class="imagecolumn">
+                    <!-- Each figure contains an image and its caption -->
+                    <figure>
+                        <img src="images/Chile.png" alt="photo of Chile">
+                        <figcaption data-color="white" data-position="bottom">Chile, 2001</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Guatemala.png" alt="photo of Guatemala">
+                        <figcaption data-color="white" data-position="top">Guatemala, 1997</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Hawaii.png" alt="photo of Hawaii">
+                        <figcaption data-color="white" data-position="bottom">Hawaii, 2010</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Iran.png" alt="photo of Iran">
+                        <figcaption data-color="black" data-position="top" data-type="tall">Iran, 1999</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Ireland.png" alt="photo of Ireland">
+                        <figcaption data-color="black" data-position="top" data-type="tall">Ireland, 2012</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Italy.png" alt="photo of Italy">
+                        <figcaption data-color="black" data-position="bottom" data-type="tall">Italy, 2015</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Moab-Desert.png" alt="photo of Moab-Desert">
+                        <figcaption data-color="white" data-position="bottom">Moab Desert, 2020</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Rocky-Mountains.png" alt="photo of Rocky-Mountains">
+                        <figcaption data-color="black" data-position="top">Rocky Mountains, 2009</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Switzerland.png" alt="photo of Switzerland">
+                        <figcaption data-color="black" data-position="top">Switzerland, 2014</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/UK.png" alt="photo of UK">
+                        <figcaption data-color="black" data-position="top">UK, 2005</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/USA.png" alt="photo of USA">
+                        <figcaption data-color="black" data-position="top">USA, 2021</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Wyoming.png" alt="photo of Wyoming">
+                        <figcaption data-color="white" data-position="top">Wyoming, 2021</figcaption>
+                    </figure>
+                    <!-- Add more figures as needed following the same structure -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Contact Form Section: Allows users to send a message -->
+        <section>
+            <form>
+                <h2>Contact</h2>
+                <p>Please fill out this form and I'll connect with you soon.</p>
+                <section>
+                    <h1>Your contact information</h1> <!-- Hidden heading for screen readers -->
+                    <div class="form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form">
+                        <label for="text">Message</label>
+                        <input type="text" id="text" placeholder="What can I help you with?" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </section>
+            </form>
+        </section>
+
+        <!-- Footer Section: Contains copyright and other legal information -->
+        <footer>
+            <p>Copyright 2021 TK Photography</p>
+        </footer>
+    </div>
+</body>
+
+</html>
